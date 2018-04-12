@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>NERDS - Каталог товаров</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header class="main-header">
        <nav class="main-navigation">
-           <a href="" class="main-header-logo">
-               <img src="img/nerds-logo.svg" alt="Логотип студии Nerd's">
+           <a href="index.html" class="main-header-logo">
+               <img src="img/nerds-logo.svg" alt="Логотип Nerds">
            </a>
            <ul class="site-navigation">
-               <li><a href="#">СТУДИЯ</a></li>
+               <li><a href="index.html">СТУДИЯ</a></li>
                <li><a href="clients.html">КЛИЕНТЫ</a></li>
-               <li><a href="store.html">МАГАЗИН</a></li>
+               <li><a href="#" class="current-page">МАГАЗИН</a></li>
                <li><a href="contacts.html">КОНТАКТЫ</a></li>
            </ul>
-           <ul class="user-navigation">
-               <li class="basket">Корзина</li>
+           <ul class="site-navigation user-navigation">
+               <li class="basket">
+                   <img src="img/basket-icon.svg" alt="Корзина товаров">
+                   <a href="">Корзина</a>  
+               </li>
            </ul>
        </nav>
    </header>
@@ -35,8 +40,8 @@
                    <input type="range">
                </p>
                <p>
-                   от<input type="text">
-                   до<input type="text">
+                   <span class="range-text">от</span><input type="text">
+                   <span class="range-text">до</span><input type="text">
                </p>
                
                <h3>СЕТКА:</h3>
@@ -105,8 +110,14 @@
                <li class="catalog-sort-item">ПО ТИПУ</li>
                <li class="catalog-sort-item">ПО НАЗВАНИЮ</li>
            </ul>
-           <input type="button">
-           <input type="button">
+           <ul class="catalog-order">
+               <li class="order-list">
+                   <img src="img/icon-down-dir.png" alt="По убыванию">
+               </li>
+               <li class="order-list">
+                   <img src="img/icon-up-dir.svg" alt="По возростанию">
+               </li>
+           </ul>
            <ul class="catalog-choose-list">
                <li class="catalog-choose-item">
                    <img src="img/img-sedona.png" alt="">
@@ -146,10 +157,11 @@
                <input type="button" class="button button-write-us" value="НАПИШИТЕ НАМ">
            </div>
            <div class="footer-social">
-               <b></b>
-               <ul><a href="" class="social-button"><img src="" alt=""></a></ul>
-               <ul><a href="" class="social-button"><img src="" alt=""></a></ul>
-               <ul><a href="" class="social-button"><img src="" alt=""></a></ul>
+               <ul>
+                   <li class="social-item"><a href="" class="social-button"><img src="img/vk-icon.svg" alt="Страница Вконтакте"></a></li>
+                   <li class="social-item"><a href="" class="social-button"><img src="img/fb-icon.svg" class="vert" alt="Страница Facebook"></a></li>
+                   <li class="social-item"><a href="" class="social-button"><img src="img/insta-icon.svg" alt="Страница Instagram"></a></li>
+               </ul>
            </div>
            <p class="footer-discont">
                <b>Давайте дружить, это выгодно!</b>
@@ -163,19 +175,19 @@
                <p>
                    <label>
                        Ваше имя:
-                       <input type="text" name="name" class="write-user-name" placeholder="Представьтесь, пожалуйста">
+                       <input type="text" name="name" class="write-user" placeholder="Представьтесь, пожалуйста">
                    </label>
                </p>
                <p>
                    <label>
                        Ваш e-mail:
-                       <input type="email" name="email" class="write-user-email" placeholder="Для отправки ответа">
+                       <input type="email" name="email" class="write-user" placeholder="Для отправки ответа">
                    </label>
                </p>
                <p>
                    <label>
                        Текст письма:
-                       <textarea name="text" class="write-user-text" placeholder="В свободной форме"></textarea>
+                       <textarea name="text" class="write-user" placeholder="В свободной форме"></textarea>
                    </label>
                </p>
                <p>

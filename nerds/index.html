@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>NERDS - Главная страница</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    <header class="main-header">
        <nav class="main-navigation">
-           <a href="" class="main-header-logo">
-               <img src="img/nerds-logo.svg" alt="Логотип студии Nerd's">
+           <a href="index.html" class="main-header-logo">
+               <img src="img/nerds-logo.svg" alt="Логотип Nerds">
            </a>
            <ul class="site-navigation">
-               <li><a href="#">СТУДИЯ</a></li>
+               <li><a href="#" class="current-page">СТУДИЯ</a></li>
                <li><a href="clients.html">КЛИЕНТЫ</a></li>
-               <li><a href="store.html">МАГАЗИН</a></li>
+               <li><a href="catalog.html">МАГАЗИН</a></li>
                <li><a href="contacts.html">КОНТАКТЫ</a></li>
            </ul>
-           <ul class="user-navigation">
-               <li class="basket">Корзина</li>
+           <ul class="site-navigation user-navigation">
+               <li class="basket">
+                   <img src="img/basket-icon.svg" alt="Корзина товаров">
+                   <a href="">Корзина</a>  
+               </li>
            </ul>
        </nav>
    </header>
@@ -35,14 +40,14 @@
                для вашего сайта или мобильного приложения</p>
                <input type="button" class="button" value="УЗНАТЬ БОЛЬШЕ">
            </div>
-           <div class="slider1">
+           <div class="slider2">
                <h2>Любим математику<br>
                как никто другой</h2>
                <p>Никакого креатива, только математические формулы<br>
                для расчета идеальных пропорций</p>
                <input type="button" class="button" value="УЗНАТЬ БОЛЬШЕ">
            </div>
-           <div class="slider1">
+           <div class="slider3">
                <h2>Только ночь,<br>
                только хардкор</h2>
                <p>Работать днем, как все? Мы против этого.<br>
@@ -60,13 +65,13 @@
                    <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                    <input type="button" class="button services-button services-button-web" value="ЗАКАЗАТЬ">
                </li>
-               <li class="services-item">
+               <li class="services-item green">
                    <img src="img/advantages-pic2.jpg" alt="Смартфоны">
                    <h3>ПРИЛОЖЕНИЯ</h3>
                    <p>Покорите топ-10 приложения в AppStore и Google Play</p>
                    <input type="button" class="button services-button services-button-app" value="ЗАКАЗАТЬ">
                </li>
-               <li class="services-item">
+               <li class="services-item yellow">
                    <img src="img/advantages-pic3.jpg" alt="Мольберт">
                    <h3>ПРЕЗЕНТАЦИИ</h3>
                    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -78,7 +83,7 @@
        <section class="about">
            <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-           <p>ВЫПОЛЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+           <p class="about-header">ВЫПОЛЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
            <ul class="about-list">
                <li class="about-item">Веб-сайтов любой сложности</li>
                <li class="about-item">Мобильных приложений для iOS и Android</li>
@@ -87,19 +92,19 @@
        </section>
        
        <section class="statistics">
-           <img src="" alt="">
-           <p>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
+           <img src="img/nerds-logo.jpg" alt="Логотип Nerds">
+           <p class="statistics-header">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
            <ul class="statistics-list">
                <li class="statistics-item">
-                   <p>146%</p>
+                   <p class="percent">146%</p>
                    <p>Уровень самоотдачи</p>
                </li>
                <li class="statistics-item">
-                   <p>100%</p>
+                   <p class="percent">100%</p>
                    <p>Соблюдение сроков</p>
                </li>
                <li class="statistics-item">
-                   <p>50%</p>
+                   <p class="percent">50%</p>
                    <p>Минимальная предоплата</p>
                </li>
            </ul>
@@ -134,10 +139,11 @@
                <input type="button" class="button button-write-us" value="НАПИШИТЕ НАМ">
            </div>
            <div class="footer-social">
-               <b></b>
-               <ul><a href="" class="social-button"><img src="" alt=""></a></ul>
-               <ul><a href="" class="social-button"><img src="" alt=""></a></ul>
-               <ul><a href="" class="social-button"><img src="" alt=""></a></ul>
+               <ul>
+                   <li class="social-item"><a href="" class="social-button"><img src="img/vk-icon.svg" alt="Страница Вконтакте"></a></li>
+                   <li class="social-item"><a href="" class="social-button"><img src="img/fb-icon.svg" class="vert" alt="Страница Facebook"></a></li>
+                   <li class="social-item"><a href="" class="social-button"><img src="img/insta-icon.svg" alt="Страница Instagram"></a></li>
+               </ul>
            </div>
            <p class="footer-discont">
                <b>Давайте дружить, это выгодно!</b>
@@ -151,19 +157,19 @@
                <p>
                    <label>
                        Ваше имя:
-                       <input type="text" name="name" class="write-user-name" placeholder="Представьтесь, пожалуйста">
+                       <input type="text" name="name" class="write-user" placeholder="Представьтесь, пожалуйста">
                    </label>
                </p>
                <p>
                    <label>
                        Ваш e-mail:
-                       <input type="email" name="email" class="write-user-email" placeholder="Для отправки ответа">
+                       <input type="email" name="email" class="write-user" placeholder="Для отправки ответа">
                    </label>
                </p>
                <p>
                    <label>
                        Текст письма:
-                       <textarea name="text" class="write-user-text" placeholder="В свободной форме"></textarea>
+                       <textarea name="text" class="write-user" placeholder="В свободной форме"></textarea>
                    </label>
                </p>
                <p>
