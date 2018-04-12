@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
    
    <header class="main-header">
         <nav class="main-navigation">
@@ -33,34 +36,34 @@
             <li><a href="catalog.html">Магазин</a></li>
             <li class="breadcrumbs-current">Средства для ухода</li>
         </ul>
-        <section class="filters">
+        <section class="filter">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form method="get" action="https://echo.htmlacademy.ru" class="filter">
                 <fieldset>
                     <legend>Производители:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-unput filter-input-checkbox" id="baxter-of-california" type="checkbox" name="baxter-of-california" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="baxter-of-california" type="checkbox" name="baxter-of-california" checked>
                             <label for="baxter-of-california">BAXTER OF CALIFORNIA</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-unput filter-input-checkbox" id="mr-natty" type="checkbox" name="mr-natty" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="mr-natty" type="checkbox" name="mr-natty" checked>
                             <label for="mr-natty">MR NATTY</label>    
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-unput filter-input-checkbox" id="suavecito" type="checkbox" name="suavecito" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="suavecito" type="checkbox" name="suavecito" checked>
                             <label for="suavecito">SUAVECITO</label>    
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-unput filter-input-checkbox" id="malin-goetz" type="checkbox" name="malin-goetz" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="malin-goetz" type="checkbox" name="malin-goetz" checked disabled>
                             <label for="malin-goetz">MALIN+GOETZ</label>    
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-unput filter-input-checkbox" id="murrays" type="checkbox" name="murrays" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="murrays" type="checkbox" name="murrays" disabled>
                             <label for="murrays">MURRAY'S</label>    
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-unput filter-input-checkbox" id="american-crew" type="checkbox" name="american-crew" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="american-crew" type="checkbox" name="american-crew" checked>
                             <label for="american-crew">AMERICAN CREW</label>    
                         </li>
                     </ul>
