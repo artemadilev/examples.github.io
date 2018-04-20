@@ -437,7 +437,7 @@ a {
     min-height: 170px;
 }
 
-.index-columns {
+.index-columns { 
     display: flex;
     justify-content: space-between;
     padding: 50px 80px;
