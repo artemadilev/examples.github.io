@@ -349,3 +349,153 @@ a {
 .restore:focus {
     text-decoration: none;
 }
+
+/* ---- Сеточные стили ---- */
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header {
+    margin-bottom: 75px;
+    
+    /* time */
+    min-height: 285px;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* time */
+    min-height: 285px;
+    background-color: transparent;
+}
+
+.main-header-logo {
+    order: 2;
+    width: 368px;
+    height: 153px;
+}
+
+.main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    
+    background-color: #000;
+    
+    /* time */
+    min-height: 70px;
+}
+
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    /* time */
+    min-height: 70px;
+}
+
+.user-navigation {
+    width: 140px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    /* time */
+    min-height: 70px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+    /* time */
+    min-height: 170px;
+}
+
+.feature-item {
+    width: 300px;
+    
+    /* time */
+    min-height: 170px;
+}
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+}
+
+.news {
+    width: 380px;
+}
+
+.gallery {
+    width: 300px;
+}
+
+.contacts {
+    width: 380px;
+}
+
+.appointment {
+    width: 300px;
+}
+
+.main-footer {
+    padding: 60px 0;
+    margin-top: 65px;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-contacts {
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
+}
+
+.footer-copyright {
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
+}
+
+.footer-social {
+    width: 145px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
