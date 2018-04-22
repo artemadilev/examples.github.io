@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
    <header class="main-header">
        <nav class="main-navigation">
            <a href="index.html" class="main-header-logo">
@@ -19,7 +19,7 @@
                <li><a href="#" class="current-page">МАГАЗИН</a></li>
                <li><a href="contacts.html">КОНТАКТЫ</a></li>
            </ul>
-           <ul class="site-navigation user-navigation">
+           <ul class="user-navigation">
                <li class="basket">
                    <img src="img/basket-icon.svg" alt="Корзина товаров">
                    <a href="">Корзина</a>  
@@ -28,9 +28,9 @@
        </nav>
    </header>
    
-   <main class="container">
+   <h1>Магазин готовых шаблонов</h1>
    
-       <h1>Магазин готовых шаблонов</h1>
+   <main class="container">
        
        <section class="filter">
            <h2 class="visually-hidden">Фильтр для шаблонов</h2>
@@ -40,8 +40,8 @@
                    <input type="range">
                </p>
                <p>
-                   <span class="range-text">от</span><input type="text">
-                   <span class="range-text">до</span><input type="text">
+                   <span class="range-text">от</span><input class="range-input" type="text">
+                   <span class="range-text">до</span><input class="range-input" type="text">
                </p>
                
                <h3>СЕТКА:</h3>
@@ -104,20 +104,22 @@
        
        <section class="catalog">
            <h2 class="visually-hidden">Каталог шаблонов</h2>
-           <h3>СОРТИРОВАТЬ:</h3>
-           <ul class="catalog-sort-list">
-               <li class="catalog-sort-item">ПО ЦЕНЕ</li>
-               <li class="catalog-sort-item">ПО ТИПУ</li>
-               <li class="catalog-sort-item">ПО НАЗВАНИЮ</li>
-           </ul>
-           <ul class="catalog-order">
-               <li class="order-list">
-                   <img src="img/icon-down-dir.png" alt="По убыванию">
-               </li>
-               <li class="order-list">
-                   <img src="img/icon-up-dir.svg" alt="По возростанию">
-               </li>
-           </ul>
+           <div class="catalog-header">
+               <h3>СОРТИРОВАТЬ:</h3>
+               <ul class="catalog-sort-list">
+                   <li class="catalog-sort-item">ПО ЦЕНЕ</li>
+                   <li class="catalog-sort-item">ПО ТИПУ</li>
+                   <li class="catalog-sort-item">ПО НАЗВАНИЮ</li>
+               </ul>
+               <ul class="catalog-order">
+                   <li class="order-list">
+                       <img src="img/icon-down-dir.png" alt="По убыванию">
+                   </li>
+                   <li class="order-list">
+                       <img src="img/icon-up-dir.svg" alt="По возростанию">
+                   </li>
+               </ul>
+           </div>
            <ul class="catalog-choose-list">
                <li class="catalog-choose-item">
                    <img src="img/img-sedona.png" alt="">
@@ -152,21 +154,25 @@
            </div>
            <div class="write-us">
                <h3>NERDS DESIGN STUDIO</h3>
-               <p>191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p><br>
-               <p>тел.+7(812)275-75-75</p>
+               <p>191186, Санкт-Петербург,<br>
+                   ул.Б.Конюшенная, д.19/8</p>
+               <p class="tel">тел.+7(812)275-75-75</p>
                <input type="button" class="button button-write-us" value="НАПИШИТЕ НАМ">
            </div>
-           <div class="footer-social">
-               <ul>
-                   <li class="social-item"><a href="" class="social-button"><img src="img/vk-icon.svg" alt="Страница Вконтакте"></a></li>
-                   <li class="social-item"><a href="" class="social-button"><img src="img/fb-icon.svg" class="vert" alt="Страница Facebook"></a></li>
-                   <li class="social-item"><a href="" class="social-button"><img src="img/insta-icon.svg" alt="Страница Instagram"></a></li>
-               </ul>
+           
+           <div class="container">
+               <div class="footer-social">
+                   <ul>
+                       <li class="social-item"><a href="" class="social-button"><img src="img/vk-icon.svg" alt="Страница Вконтакте"></a></li>
+                       <li class="social-item"><a href="" class="social-button"><img src="img/fb-icon.svg" class="vert" alt="Страница Facebook"></a></li>
+                       <li class="social-item"><a href="" class="social-button"><img src="img/insta-icon.svg" alt="Страница Instagram"></a></li>
+                   </ul>
+               </div>
+               <p class="footer-discont">
+                   <b>Давайте дружить, это выгодно!</b><br>
+                   Скидка 10% для друзей из социальных сетей    
+               </p>
            </div>
-           <p class="footer-discont">
-               <b>Давайте дружить, это выгодно!</b>
-               Скидка 10% для друзей из социальных сетей    
-           </p>
        </footer>
        
        <section class="modal">
