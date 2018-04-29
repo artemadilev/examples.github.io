@@ -43,6 +43,8 @@ li {
     font: inherit;
     line-height: 18px;
     
+    padding: 15px 40px;
+    
     text-align: center;
     color: #fff;
     vertical-align: middle;
@@ -50,6 +52,7 @@ li {
     
     background-color: #fb565a;
     border: none;
+    border-radius: 3px;
 }
 
 .button:hover,
@@ -60,6 +63,10 @@ li {
 .button:active {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.sliders .button {
+    padding: 15px 50px;
 }
 
 .green .button {
@@ -101,8 +108,46 @@ li {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.button-write-us {
+    padding: 15px 45px;
+}
+
+.button-modal {
+    padding: 15px 80px;
+}
+
+.pagination-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.pagination-item {
+    height: auto;
+    min-width: 50px;
+    height: 50px;
+    margin-right: 12px;
+    background-color: #eee;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-item:last-child a {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 .pagination-item a {
     background-color: #eee;
+    height: 50px;
+    min-width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #000;
 }
 
 .pagination-item a:hover,
@@ -121,10 +166,34 @@ li {
 .pagination-item-current a:hover {
     background-color: #fff;
     color: rgba(0, 0, 0, 1.0);
-    border: 2px solid #dbdbdb;
+    border: 3px solid #dbdbdb;
 }
 
-.site-navigation a {
+.user-navigation {
+    position: relative;
+    margin-left: auto;
+}
+
+.user-navigation::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/basket-icon.svg);
+    opacity: 0.3;
+}
+
+.site-navigation {
+    padding: 0;
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation a,
+.user-navigation a {
     color: #000;
     font-size: 16px;
     font-weight: 500;
@@ -157,13 +226,90 @@ li {
     opacity: 0.3;
 }
 
-.slider1,
-.slider2,
-.slider3 {
+/* Слайдер. Начало. */
+
+.slider {
+    position: relative;
+    width: 1180px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+.slider input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px;
+    background: white;
+    border: 5px solid white;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background: #c1c1c1;
+}
+
+.slider-controls .active {
+    background: #c1c1c1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
     min-height: 430px;
 }
 
-.sliders h2 {
+.slide:nth-child(1) {
+    background: url('../img/slide1.png') right bottom no-repeat;
+}
+
+.slide:nth-child(2) {
+    background: url('../img/slide2.png') right bottom no-repeat;
+}
+
+.slide:nth-child(3) {
+    background: url('../img/slide3.png') right bottom no-repeat;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+}
+
+.slide h2 {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -171,23 +317,13 @@ li {
     padding-top: 80px; 
 }
 
-.sliders p {
+.slide p {
     margin: 40px 0;
     font-size: 16px;
     line-height: 24px;
 }
 
-.slider1 {
-    background: url('../img/slide1.png') right center no-repeat;
-}
-
-.slider2 {
-    background: url('../img/slide2.png') right center no-repeat;
-}
-
-.slider3 {
-    background: url('../img/slide3.png') right center no-repeat;
-}
+/* Слайдер. Конец. */
 
 .services {
     margin: 0;
@@ -200,7 +336,6 @@ li {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    padding-right: 60px;
 }
 
 .services-item {
@@ -362,9 +497,37 @@ li {
     font-weight: bold;
 }
 
+.modal span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.modal-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-container p:nth-child(1) {
+    margin-right: 40px;
+    flex-grow: 1;
+}
+
+.modal-container p:nth-child(2) {
+    flex-grow: 1;
+}
+
+.modal-container p:nth-child(3) {
+    width: 100%;
+    flex-grow: 1;
+}
+
 .write-user {
     border: 2px solid #d7dcde;
+    border-radius: 3px;
     outline: none;
+    height: 50px;
+    width: 100%;
+    padding-left: 13px;
 }
 
 .write-user:hover {
@@ -374,6 +537,11 @@ li {
 .write-user:active,
 .write-user:focus {
     border: 2px solid #000;
+}
+
+.write-textarea {
+    height: 116px;
+    padding-top: 17px;
 }
 
 /* Каталог */
@@ -397,11 +565,89 @@ li {
     font-weight: 500;
 }
 
+/* Range-ползунок. Начало. */
+
+.range-filter {
+    width: 240px;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 30px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.range-controls .scale {
+    margin-top: 39px;
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid white;
+    background: #ababab;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .min-toggle {
+    left: 70px;
+}
+
+.range-controls .max-toggle {
+    left: 165px;
+}
+
+.price-controls input {
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: none; 
+    background: #f1f1f1;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color: #283136;
+    border-radius: 5px;
+}
+
+.price-controls .min-price {
+    margin-right: 14px;
+}
+
+.price-controls {
+    white-space: nowrap;
+}
+
+/* Range-ползунок. Начало. */
+
 .filter h3,
 .catalog h3 {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
+}
+
+.filter h3 {
+    margin: 55px 0;
 }
 
 .catalog-sort-item {
@@ -418,16 +664,6 @@ li {
 .catalog-sort-item:active,
 .catalog-sort-item:focus {
     opacity: 1;
-}
-
-.range-text {
-    line-height: 22px;
-    text-transform: uppercase;
-}
-
-.range-input {
-    width: 80px;
-    height: 40px;
 }
 
 .filter input[type="text"] {
@@ -452,14 +688,6 @@ li {
 
 .main-header-logo {
     margin-right: 200px;
-}
-
-.site-navigation {
-    display: flex;
-}
-
-.user-navigation {
-    margin-left: auto;
 }
 
 .partners {
@@ -496,7 +724,7 @@ li {
     padding: 0;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 260px;
 }
@@ -583,25 +811,6 @@ li {
 .catalog-sort-item {
     margin-right: 25px;
 }
-
-.pagination-list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.pagination-item {
-    height: auto;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    background-color: #eee;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 
 

@@ -21,8 +21,7 @@
            </ul>
            <ul class="user-navigation">
                <li class="basket">
-                   <img src="img/basket-icon.svg" alt="Корзина товаров">
-                   <a href="">Корзина</a>  
+                   <a href="#">Корзина</a>  
                </li>
            </ul>
        </nav>
@@ -36,13 +35,19 @@
            <h2 class="visually-hidden">Фильтр для шаблонов</h2>
            <form action="" method="get">
                <h3>СТОИМОСТЬ:</h3>
-               <p>
-                   <input type="range">
-               </p>
-               <p>
-                   <span class="range-text">от</span><input class="range-input" type="text">
-                   <span class="range-text">до</span><input class="range-input" type="text">
-               </p>
+               <div class="range-filter">
+                   <div class="range-controls">
+                       <div class="scale">
+                           <div class="bar"></div>
+                       </div>
+                       <div class="toggle min-toggle"></div>
+                       <div class="toggle max-toggle"></div>
+                   </div>
+                   <div class="price-controls">
+                      от <input name="min-price" type="text" class="min-price" value="0">
+                      до <input name="max-price" type="text" class="max-price" value="15000">
+                   </div>
+               </div>
                
                <h3>СЕТКА:</h3>
                <ul class="filter-grid-list">
@@ -177,23 +182,23 @@
        
        <section class="modal">
            <h2>Напишите нам</h2>
-           <form action="" method="post">
+           <form action="" method="post" class="modal-container">
                <p>
                    <label>
-                       Ваше имя:
+                       <span>Ваше имя:</span>
                        <input type="text" name="name" class="write-user" placeholder="Представьтесь, пожалуйста">
                    </label>
                </p>
                <p>
                    <label>
-                       Ваш e-mail:
+                       <span>Ваш e-mail:</span>
                        <input type="email" name="email" class="write-user" placeholder="Для отправки ответа">
                    </label>
                </p>
                <p>
                    <label>
-                       Текст письма:
-                       <textarea name="text" class="write-user" placeholder="В свободной форме"></textarea>
+                       <span>Текст письма:</span>
+                       <textarea name="text" class="write-user write-textarea" placeholder="В свободной форме"></textarea>
                    </label>
                </p>
                <p>

@@ -21,40 +21,49 @@
            </ul>
            <ul class="user-navigation">
                <li class="basket">
-                   <img src="img/basket-icon.svg" alt="Корзина товаров">
-                   <a href="">Корзина</a>  
+                   <a href="#">Корзина</a>  
                </li>
            </ul>
        </nav>
    
        <h1 class="visually-hidden">Студия по созданию сайтов Nerd's</h1>
        
-       <section class="sliders">
-           <div class="sliders-buttons"></div>
-           <div class="slider1">
-               <h2>Долго, дорого,<br>
-               скрупулезно.</h2>
-               <p>Математически выверенный дизайн<br>
-               для вашего сайта или мобильного приложения</p>
-               <input type="button" class="button" value="УЗНАТЬ БОЛЬШЕ">
+       <section class="slider">
+           <input type="radio" id="btn-1" name="toggle" checked>
+           <input type="radio" id="btn-2" name="toggle" checked>
+           <input type="radio" id="btn-3" name="toggle" checked>
+           <div class="slider-controls">
+               <label for="btn-1"></label>
+               <label for="btn-2"></label>
+               <label for="btn-3"></label>
            </div>
-           <div class="slider2">
-               <h2>Любим математику<br>
-               как никто другой</h2>
-               <p>Никакого креатива, только математические формулы<br>
-               для расчета идеальных пропорций</p>
-               <input type="button" class="button" value="УЗНАТЬ БОЛЬШЕ">
+           <div class="slides">
+               <div class="slide">
+                   <h2>Долго, дорого,<br>
+                   скрупулезно.</h2>
+                   <p>Математически выверенный дизайн<br>
+                   для вашего сайта или мобильного приложения</p>
+                   <input type="button" class="button" value="УЗНАТЬ БОЛЬШЕ">
+               </div>
+               <div class="slide">
+                   <h2>Любим математику<br>
+                   как никто другой</h2>
+                   <p>Никакого креатива, только математические формулы<br>
+                   для расчета идеальных пропорций</p>
+                   <input type="button" class="button" value="УЗНАТЬ БОЛЬШЕ">
+               </div>
+               <div class="slide">
+                   <h2>Только ночь,<br>
+                   только хардкор</h2>
+                   <p>Работать днем, как все? Мы против этого.<br>
+                   Ближе к полуночи работа только начинается.</p>
+                   <input type="button" class="button" value="УЗНАТЬ БОЛЬШЕ">
+               </div>
            </div>
-           <div class="slider3">
-               <h2>Только ночь,<br>
-               только хардкор</h2>
-               <p>Работать днем, как все? Мы против этого.<br>
-               Ближе к полуночи работа только начинается.</p>
-               <input type="button" class="button" value="УЗНАТЬ БОЛЬШЕ">
-           </div>
+           
        </section>
     </header>
-       
+    
     <main class="container">
        <section class="services">
            <h2 class="visually-hidden">Услуги</h2>
@@ -158,23 +167,23 @@
        
        <section class="modal">
            <h2>Напишите нам</h2>
-           <form action="" method="post">
+           <form action="" method="post" class="modal-container">
                <p>
                    <label>
-                       Ваше имя:
+                       <span>Ваше имя:</span>
                        <input type="text" name="name" class="write-user" placeholder="Представьтесь, пожалуйста">
                    </label>
                </p>
                <p>
                    <label>
-                       Ваш e-mail:
+                       <span>Ваш e-mail:</span>
                        <input type="email" name="email" class="write-user" placeholder="Для отправки ответа">
                    </label>
                </p>
                <p>
                    <label>
-                       Текст письма:
-                       <textarea name="text" class="write-user" placeholder="В свободной форме"></textarea>
+                       <span>Текст письма:</span>
+                       <textarea name="text" class="write-user write-textarea" placeholder="В свободной форме"></textarea>
                    </label>
                </p>
                <p>
