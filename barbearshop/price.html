@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Страница товара</title>
+    <title>Каталог Барбершоп</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
+</head> 
 <body class="inner-page">
    
    <header class="main-header">
@@ -17,7 +17,7 @@
             <ul class="site-navigation">
                 <li><a href="info.html">Информация</a></li>
                 <li><a href="news.html">Новости</a></li>
-                <li><a href="price.html">Прайс-лист</a></li>
+                <li class="site-navigation-current"><a href="price.html">Прайс-лист</a></li>
                 <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
                 <li><a href="catalog.html">Контакты</a></li>
             </ul>
@@ -28,50 +28,65 @@
             </ul>
         </nav>
     </header>
-   
-   <main class="container">
-       <h1 class="page-title">Набор для путешествий "Baxter of California"</h1>
-       <ul class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Средства для ухода</a></li>
-            <li class="breadcrumbs-current">Набор для путешествий "Baxter of California"</li>
-        </ul>
+    
+    <main class="container">
         
-        <div class="catalog-columns">
-            <section class="product-photos">
-                <h2 class="visually-hidden">Изображения товара</h2>
-                <p class="product-photo-full">
-                    <img src="img/baxter-1.jpg" width="460" height="498" alt="Фото всего набора">
-                </p>
-                <ul class="product-photo-preview">
-                    <li><img src="img/baxter-2.jpg" width="140" height="149" alt="Фото в анфас"></li>
-                    <li><img src="img/baxter-3.jpg" width="140" height="149" alt="Фото в профиль"></li>
-                    <li><img src="img/baxter-4.jpg" width="140" height="149" alt="Фото отдельной части"></li>
-                </ul>
-            </section>
-
-            <section class="product-info">
-                <h2 class="visually-hidden">Карточка товара</h2>
-                <p class="product-availability">Есть в наличии</p>
-                <p class="product-article">Артикул: dexter-ae</p>
-                <p class="product-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бриться, шампунь. Набор также может стать отличным подарком.</p>
-                <p class="product-price">
-                  <b>2 900 Р</b>
-                  <a class="button" href="#">Купить</a>
-                </p>
-                <h3>В набор входят:</h3>
-                <ul>
-                  <li>Средство для умывания (50 мл)</li>
-                  <li>Увлажняющий крем (50 мл)</li>
-                  <li>Крем для бритья (50 мл)</li>
-                  <li>Крем после бритья, шампунь (50 мл)</li>
-                  <li>Удобная кожаная косметичка</li>
-                </ul>
-            </section>
+        <div class="inner-page-container">
+            <h1 class="page-title">Прайс-лист</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs-current">Прайс-лист</li>
+            </ul>
         </div>
-   </main>
-   
+        
+        <section class="inner-content">
+            <h2 class="big-heading">Истинно мужская классика</h2>
+            
+            <div class="inner-columns">
+                <div class="inner-column-left">
+                    <h2>Мы используем только<br>
+                        лучшие средства:</h2>
+                    <ul class="custom-list-1">
+                        <li>Baxter of California</li>
+                        <li>Mr Natty</li>
+                        <li>Suavecito</li>
+                        <li>Malin+Goetz</li>
+                    </ul>
+                    
+                </div>
+                <div class="inner-column-right">
+                    <h2>Цены на услуги<br>
+                        наших мастеров:</h2>
+                    <table class="custom-table-1">
+                        <tr>
+                            <td>Стрижка</td>
+                            <td>1500 Р</td>
+                        </tr>
+                        <tr>
+                            <td>Стрижка бороды</td>
+                            <td>500 Р</td>
+                        </tr>
+                        <tr>
+                            <td>Накрутка усов</td>
+                            <td>350 Р</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                   
+            <div class="inner-columns">
+                <h2>Несколько слов о нас:</h2>
+                <div class="inner-column-left">
+                    <p class="short-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работает на количество, мы делаем качество.</p>
+                </div>
+                <div class="inner-column-right">        
+                    <p class="short-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
    <footer class="main-footer">
         <div class="container">
             <p class="footer-contacts">
@@ -127,6 +142,5 @@
         </p>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
-    
 </body>
 </html>
