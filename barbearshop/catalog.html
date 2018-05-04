@@ -42,46 +42,55 @@
                 <form method="get" action="https://echo.htmlacademy.ru" class="filter">
                     <fieldset>
                         <legend>Производители:</legend>
-                        <ul>
+                        <ul class="goods">
                             <li class="filter-option">
-                                <input class="filter-input filter-input-checkbox" id="baxter-of-california" type="checkbox" name="baxter-of-california" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox" id="baxter-of-california" type="checkbox" name="baxter-of-california" checked>
+                                <span class="checkbox-indicator"></span>
                                 <label for="baxter-of-california">BAXTER OF CALIFORNIA</label>
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" id="mr-natty" type="checkbox" name="mr-natty" checked>
+                                <span class="checkbox-indicator"></span>
                                 <label for="mr-natty">MR NATTY</label>    
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" id="suavecito" type="checkbox" name="suavecito" checked>
+                                <span class="checkbox-indicator"></span>
                                 <label for="suavecito">SUAVECITO</label>    
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" id="malin-goetz" type="checkbox" name="malin-goetz" checked disabled>
+                                <span class="checkbox-indicator"></span>
                                 <label for="malin-goetz">MALIN+GOETZ</label>    
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" id="murrays" type="checkbox" name="murrays" disabled>
+                                <span class="checkbox-indicator"></span>
                                 <label for="murrays">MURRAY'S</label>    
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" id="american-crew" type="checkbox" name="american-crew" checked>
+                                <span class="checkbox-indicator"></span>
                                 <label for="american-crew">AMERICAN CREW</label>    
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Группы товаров:</legend>
-                        <ul>
+                        <ul class="goods">
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-radio" id="shaving" type="radio" name="product-group" value="shaving">
+                                <span class="radio-indicator checkbox-indicator"></span>
                                 <label for="shaving">Бритвенные принадлежности</label>
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-radio" id="care-products" type="radio" name="product-group" value="hair-care">
+                                <span class="radio-indicator checkbox-indicator"></span>
                                 <label for="care-products">Средства для ухода</label>
                             </li>
                             <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-radio" id="acc-ies" type="radio" name="product-group" value="accessories">
+                                <span class="radio-indicator checkbox-indicator"></span>
                                 <label for="acc-ies">Аксессуары</label>
                             </li>
                         </ul>
