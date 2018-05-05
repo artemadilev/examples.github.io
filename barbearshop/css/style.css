@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
@@ -37,7 +37,7 @@ img {
 fieldset {
     margin: 0;
     padding: 0;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -62,6 +62,7 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     margin-right: 16px;
     padding: 10px 30px;
+    outline: none;
     
     font: inherit;
     
@@ -472,9 +473,18 @@ input[type="radio"].visually-hidden {
     padding-right: 20px;
 }
 
+.product-info .product-price {
+    margin-bottom: 65px;
+}
+
 .product-info h3 {
     font-size: 24px;
     line-height: 30px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .product-info ul {
@@ -491,6 +501,12 @@ input[type="radio"].visually-hidden {
     margin: 1px 10px 1px 3px;
     transform: rotate(45deg);
 }
+
+.product-text {
+    margin-bottom: 40px;
+}
+
+
 
 .main-footer {
     color: #fff;
@@ -530,6 +546,7 @@ input[type="radio"].visually-hidden {
     background-color: #000;
     background-repeat: no-repeat;
     background-position: center;
+    outline: none;
 }
 
 .vk {
@@ -544,17 +561,20 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/instagram.svg");
 }
 
-.vk:hover {
+.vk:hover,
+.vk:focus {
     background-image: url("../img/vk-black.svg");
     background-color: #fff;
 }
 
-.fb:hover {
+.fb:hover,
+.fb:focus {
     background-image: url("../img/facebook-black.svg");
     background-color: #fff;
 }
 
-.inst:hover {
+.inst:hover,
+.inst:focus {
     background-image: url("../img/instagram-black.svg");
     background-color: #fff;
 }
@@ -579,6 +599,7 @@ input[type="radio"].visually-hidden {
 .footer-copyright .button {
     display: block;
     margin-right: 0;
+    outline: none;
 }
 
 .footer-copyright .button:hover,
@@ -809,6 +830,10 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
+    margin-bottom: 55px;
+}
+
+.main-header-index {
     margin-bottom: 75px;
 }
 
@@ -900,6 +925,10 @@ input[type="radio"].visually-hidden {
     
     height: 5px;
     background-color: #fff;
+}
+
+.parent-block a[href] {
+    pointer-events: all;
 }
 
 .page-title {
@@ -1039,7 +1068,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-    padding: 60px 0;
+    padding: 60px 0 40px 0;
     margin-top: 50px;
 }
 
@@ -1071,7 +1100,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
-    margin: o auto;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -1260,7 +1289,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option input[type="radio"]:focus + .checkbox-indicator {
-    
+    box-shadow: 0 0 0 1px rgba(77,144,254,1);
 }
 
 .filter-option input[type="checkbox"]:checked + .checkbox-indicator::before,
