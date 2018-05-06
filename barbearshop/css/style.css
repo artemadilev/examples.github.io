@@ -1,6 +1,6 @@
 body {
     min-width: 960px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     
     font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -271,9 +271,10 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+    width: 940px;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 50px;
 }
 
@@ -932,12 +933,16 @@ input[type="radio"].visually-hidden {
 }
 
 .page-title {
-    margin: 0;
+    width: 940px;
+    margin: 0 auto;
     margin-bottom: 15px;
     padding: 0;
 }
 
 .features {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 80px;
 }
 
@@ -959,6 +964,9 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-between;
     padding: 50px 80px;
@@ -966,6 +974,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-columns {
+    width: 940px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -1012,6 +1022,8 @@ input[type="radio"].visually-hidden {
 
 .news {
     width: 380px;
+    padding-right: 16px;
+    background: url("../img/vertical-strip.png") no-repeat right center;
 }
 
 .gallery {
@@ -1020,6 +1032,8 @@ input[type="radio"].visually-hidden {
 
 .contacts {
     width: 380px;
+    padding-right: 16px;
+    background: url("../img/vertical-strip.png") no-repeat right center;
 }
 
 .contacts p {
@@ -1105,6 +1119,8 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-content {
+    width: 940px;
+    margin: 0 auto;
     margin-bottom: 75px;
 }
 
