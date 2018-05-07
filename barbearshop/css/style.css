@@ -313,7 +313,7 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
-.filter legend  {
+.filter legend {
     font-size: 24px;
     line-height: 30px;
 }
@@ -402,6 +402,7 @@ input[type="radio"].visually-hidden {
 .pagination-item {
     display: block;
     margin-right: 7px;
+    margin-bottom: 7px;
     float: left;
 }
 
@@ -439,11 +440,13 @@ input[type="radio"].visually-hidden {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product-photo-preview li {
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
     height: 149px;
+    margin-bottom: 20px;
 }
 
 .product-photo-full {
@@ -966,7 +969,8 @@ input[type="radio"].visually-hidden {
 .index-columns {
     max-width: 940px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
     padding: 50px 80px;
@@ -986,6 +990,7 @@ input[type="radio"].visually-hidden {
 
 .filters legend {
     margin-bottom: 30px;
+    word-break: break-all;
 }
 
 .catalog {
@@ -1344,22 +1349,4 @@ input[type="radio"].visually-hidden {
     transform: rotate(-45deg);
 }
 
-/* Стили чекбоксов и радиокнопок Каталога. Конеч. */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Стили чекбоксов и радиокнопок Каталога. Конец. */
