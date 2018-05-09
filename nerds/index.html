@@ -5,7 +5,7 @@
     <title>NERDS - Главная страница</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
    <header class="main-header">
@@ -124,7 +124,9 @@
            <h2 class="visually-hidden">Компании партнеры</h2>
            <ul class="partners-list">
                <li class="partners-item">
-                   <img src="img/logo-1.png" alt="Логотип партнера HTML-Academy">
+                   <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+                       <img src="img/logo-1.png" alt="Логотип партнера HTML-Academy"> 
+                   </a>
                </li>
                <li class="partners-item">
                    <img src="img/logo-2.png" alt="Логотип партнера Barbershop Borodinski">
@@ -140,14 +142,13 @@
        
        <footer class="main-footer">
            <div class="map">
-               <a href="map.html">Карта проезда</a>
-           </div>
-           <div class="write-us">
-               <h3>NERDS DESIGN STUDIO</h3>
-               <p>191186, Санкт-Петербург,<br>
-                   ул.Б.Конюшенная, д.19/8</p>
-               <p class="tel">тел.+7(812)275-75-75</p>
-               <input type="button" class="button button-write-us" value="НАПИШИТЕ НАМ">
+               <div class="write-us">
+                   <h3>NERDS DESIGN STUDIO</h3>
+                   <p>191186, Санкт-Петербург,<br>
+                       ул.Б.Конюшенная, д.19/8</p>
+                   <p class="tel">тел.+7(812)275-75-75</p>
+                   <input type="button" class="button button-write-us" value="НАПИШИТЕ НАМ">
+               </div>
            </div>
            
            <div class="container">
@@ -183,12 +184,13 @@
                <p>
                    <label>
                        <span>Текст письма:</span>
-                       <textarea name="text" class="write-user write-textarea" placeholder="В свободной форме"></textarea>
+                       <textarea rows="3" name="text" class="write-user write-textarea" placeholder="В свободной форме"></textarea>
                    </label>
                </p>
                <p>
                    <input type="button" class="button button-modal" value="Отправить">
                </p>
+               <button class="modal-close" type="button">Закрыть</button>
            </form>
        </section>
        
