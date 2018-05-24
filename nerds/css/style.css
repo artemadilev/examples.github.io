@@ -262,7 +262,7 @@ li {
     height: 10px;
     margin-left: -100px;
     text-align: center;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .slider-controls label {
@@ -942,6 +942,7 @@ li {
 
 .modal {
     display: none;
+    z-index: 11;
     
     height: 470px;
     width: 760px;
@@ -1051,12 +1052,12 @@ li {
     opacity: 0.3;
 }
 
-.filter-option input[type="checkbox"]:focus + .checkbox-indicator {
-    border-color: #a6a6a6;
-}
-
-.filter-option input[type="radio"]:focus + .checkbox-indicator {
-    box-shadow: 0 0 0 1px rgba(77,144,254,1);
+.filter-option input[type="radio"]:hover:not(:disabled) + .checkbox-indicator,
+.filter-option input[type="radio"]:focus + .checkbox-indicator,
+.filter-option input[type="radio"]:active:not(:disabled) + .checkbox-indicator,
+.filter-option input[type="checkbox"]:focus + .checkbox-indicator,
+.filter-option input[type="checkbox"]:checked:focus + .checkbox-indicator::after {
+    border-color: #4d4d4d;
 }
 
 .filter-option input[type="checkbox"]:checked + .checkbox-indicator::after {
@@ -1103,6 +1104,11 @@ li {
     
     border-radius: 50%;
     background-color: #a6a6a6;
+}
+
+.filter-option input[type="radio"]:focus:checked:not(:disabled) + .checkbox-indicator::after, 
+.filter-option input[type="radio"]:hover:checked:not(:disabled) + .checkbox-indicator::after {
+    background-color: #4d4d4d;
 }
 
 .filter-option input[type="checkbox"]:checked + .checkbox-indicator::before {
