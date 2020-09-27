@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PINK</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+   
+   <header class="page-header">
+       <nav class="main-nav main-nav--closed main-nav--nojs">
+           <div class="main-nav__wrapper">
+               <a class="page-header__logo">
+               </a>
+           </div>
+           <button class="main-nav__toggle" type="button">
+               <span class="visually-hidden">Открыть меню</span>
+           </button>
+           <ul class="main-nav__list">
+               <li class="main-nav__item main-nav__item--active">
+                   <a>Главная</a>
+               </li>
+               <li class="main-nav__item">
+                   <a href="photo.html">Фотографии</a>
+               </li>
+               <li class="main-nav__item">
+                   <a href="">Конкурс</a> 
+               </li>
+               <li class="main-nav__item">
+                   <a href="">HTML Academy</a>
+               </li>
+           </ul>
+       </nav>
+   </header>
+   
+   <main class="page-main">
+       <h1 class="visually-hidden">Мобильное приложение Pink</h1>
+       
+       <section class="download">
+           <div class="download__mobile"></div>
+           <div class="download__wrapper">
+               <p class="download__header">Взгляните на жизнь иначе!</p>
+               <button class="download__button" type="button">Скачать приложение</button>
+               <ul class="download__os-list">
+                   <li class="download__os-item">
+                       <img src="img/logo-apple.svg" alt="Приложение для iOS" class="download__img">
+                   </li>
+                   <li class="download__os-item">
+                       <img src="img/logo-android.svg" alt="Приложение для Android" class="download__img">
+                   </li>
+                   <li class="download__os-item">
+                       <img src="img/logo-win.svg" alt="Приложение для Windows Phone" class="download__img">
+                   </li>
+               </ul>
+               <p class="download__platforms">
+                   Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+               </p>
+           </div>
+       </section>
+       
+       <section class="advantages">
+           <h2 class="visually-hidden">Наши преимущества</h2>
+           <p class="advantages__header">Устали от серости мегаполиса?</p>
+           <p class="advantages__header advantages__bcg">Нам есть, что вам<br> предложить!</p>
+           <ul class="advantages__list">
+               <li class="advantages__item">
+                   <h3 class="advantages__item-header">Поднимает настроение</h3>
+                   <p class="advantages__item-text">
+                       Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                   </p>
+               </li>
+               <li class="advantages__item">
+                   <h3 class="advantages__item-header">Меняет мир вокруг</h3>
+                   <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+               </li>
+               <li class="advantages__item">
+                   <h3 class="advantages__item-header">Заводит новых друзей</h3>
+                   <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+               </li>
+           </ul>
+       </section>
+       
+       <section class="effect">
+           <div class="effect__wrapper">
+               <h2 class="effect__header">Эффект<br> на 24 часа!</h2>
+               <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+               <a href="#" class="effect__link">Узнать больше об исследовании</a>
+           </div>
+       </section>
+       
+       <section class="reviews">
+           <h2 class="visually-hidden">Отзывы</h2>
+           <ul class="reviews__list slider__list">
+               <li class="reviews__item slider__item slider__item--active">
+                   <div class="reviews__quotes"></div>
+                   <h3 class="reviews__name">Николай Петров</h3>
+                   <p class="reviews__name-info">25 лет, водитель трамвая</p>
+                   <blockqoute class="reviews__description">
+                       «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                   </blockqoute>
+               </li>
+               <li class="reviews__item slider__item">
+                   <h3 class="reviews__name">Лебедева Светлана</h3>
+                   <p class="reviews__name-info">30 лет, специалист по продажам
+                   <blockqoute class="reviews__description">
+                       «Теперь пользуюсь только этим приложением. 5 баллов!»
+                   </blockqoute>
+               </li>
+               <li class="reviews__item slider__item">
+                   <h3 class="reviews__name">Вячеслав Ивлев</h3>
+                   <p class="reviews__name-info">40 лет, предприниматель</p>
+                   <blockqoute class="reviews__description">
+                       «По-настоящему удобное приложение, с огромной аудиторией, создателям респект»
+                   </blockqoute>
+               </li>
+           </ul>
+           <div class="reviews__toggles slider__toggles">
+               <button class="slider__toggle" type="button">1</button>
+               <button class="slider__toggle" type="button">2</button>
+               <button class="slider__toggle" type="button">3</button>
+           </div>
+       </section>
+       
+       <section class="prices">
+           <h2 class="visually-hidden">Тарифы</h2>
+           <table class="prices__table-list">
+               <tr class="prices__table-header">
+                   <th>&nbsp;</th>
+                   <th class="prices__table-field">
+                       <p class="prices__tariff">База</p>
+                       <p class="prices__cost">1,99 USD</p>
+                   </th>
+                   <th class="prices__table-field">
+                       <p class="prices--hit-enabled">
+                           <span>хит</span>
+                       </p>
+                       <p class="prices__tariff">Стандарт</p>
+                       <p class="prices__cost">3,99 USD</p>
+                   </th>
+                   <th class="prices__table-field">
+                       <p class="prices__tariff">Анлим</p>
+                       <p class="prices__cost">9,99 USD</p>
+                   </th>
+               </tr>
+               <tr class="prices__item--names">
+                   <td class="prices__table-field prices__cell--hidden">
+                       <p class="prices__table-value">
+                           Розовый фильтр
+                       </p>
+                   </td>
+                   <td class="prices__table-field">
+                       <p class="prices__table-value there-is-yes">
+                           <span>Розовый фильтр</span>
+                       </p>
+                   </td>
+                   <td class="prices__table-field">
+                       <p class="prices__table-value there-is-yes">
+                           <span>Розовый фильтр</span>
+                       </p>
+                   </td>
+                   <td class="prices__table-field">
+                       <p class="prices__table-value there-is-yes">
+                           <span>Розовый фильтр</span>
+                       </p>
+                   </td>
+               </tr>
+               <tr class="prices__item--names">
+                   <td class="prices__table-field prices__cell--hidden">
+                       <p class="prices__table-value">
+                           Смайлики
+                       </p>
+                   </td>
+                   <td class="prices__table-field">
+                       <p class="prices__table-value there-is-no">
+                           <span>Смайлики</span>
+                       </p>
+                   </td>
+                   <td class="prices__table-field">
+                       <p class="prices__table-value there-is-yes">
+                           <span>Смайлики</span>
+                       </p>
+                   </td>
+                   <td class="prices__table-field">
+                       <p class="prices__table-value there-is-yes">
+                           <span>Смайлики</span>
+                       </p>
+                   </td>
+               </tr>
+               <tr class="prices__item--names">
+                   <td class="prices__table-field prices__cell--hidden">
+                       <p class="prices__table-value">
+                           Комментарии
+                       </p>
+                   </td>
+                   <td class="prices__table-field">
+                       <p class="prices__table-value there-is-no">
+                           <span>Комментарии</span>
+                       </p>
+                   </td>
+                   <td class="prices__table-field">
+                       <p class="prices__table-value there-is-no">
+                           <span>Комментарии</span>
+                       </p>
+                   </td>
+                   <td class="prices__table-field">
+                       <p class="prices__table-value there-is-yes">
+                           <span>Комментарии</span>
+                       </p>
+                   </td>
+               </tr>
+           </table>
+           <div class="prices__toggles slider__toggles">
+               <button class="slider__toggle" type="button">1</button>
+               <button class="slider__toggle" type="button">2</button>
+               <button class="slider__toggle" type="button">3</button>
+           </div>
+       </section>
+       
+       <section class="contacts">
+           <h3 class="contacts__header">
+               Остались вопросы?<br>
+               Свяжитесь с нами!
+           </h3>
+           <dir class="contacts__wrapper">
+               <p class="contacts__feedback">
+                   <b>Звоните:<br></b>
+                   <strong>+7(812)555-66-66</strong>
+               </p>
+               <p class="contacts__feedback contacts__write">
+                   <b>Пишите:<br></b>
+                   <strong>mail@htmlacademy.ru</strong>
+               </p>
+               <p class="contacts__feedback contacts__guests">
+                   <b>Приезжайте в гости:<br></b>
+                   <strong>ул. Большая Конюшенная, 19/8</strong>
+               </p>
+           </dir>
+       </section>
+       
+       <section class="map">
+           <dir class="map__triangle"></dir>
+           <iframe src="https://yandex.ru/map-widget/v1/-/CBumqDDIHA" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
+       </section>
+       
+       <footer class="page-footer page-footer--hidden">
+           <a href="">
+               <dir class="page-footer__logo"></dir>
+           </a>
+           <ul class="page-footer__list">
+               <li class="page-footer__item">
+                   <a href="#">
+                       <svg version="1" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663" viewBox="0 0 17.5 14.663"><path fill="#d22856" fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.84-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.61 1.977-.24 6.592-3.273 10.956-10.383 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.34.192 4.01-.412 4.835-1.15-.99-.293-2.76-.464-3.07-2.88.362.104.583.222 1.228.116C1.757 8.067.385 7.366.46 5.218c.295.32 1.1.523 1.382.46C1.117 5.445-.188 2.4.922.844c1.872 1.81 3.847 3.52 7.368 3.685.216-2.24 1.17-3.74 2.993-4.375z"/></svg>
+                   </a>
+               </li>
+               <li class="page-footer__item">
+                   <a href="#">
+                       <svg version="1" xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944" viewBox="0 0 8.673 18.944"><path fill="#d22856" d="M6.275 3.357h2.398V0H5.795C2.655.18 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.02-1.045-.036-2.406.49-2.758z"/></svg>
+                   </a>
+               </li>
+               <li class="page-footer__item">
+                   <a href="#">
+                       <svg version="1" xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96" viewBox="0 0 14.64 13.96"><path fill="#d22856" d="M1.775 13.78C.8 14.257 0 13.758 0 12.67V1.29C0 .202.8-.295 1.775.18l12.133 5.933c.975.478.975 1.258 0 1.736L1.775 13.78z"/></svg>
+                   </a>
+               </li>
+           </ul>
+           <div class="page-footer__copyright">
+               <span>Разработано</span>
+               <svg class="page-footer__logo-html" version="1" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path d="M13.62.017L13.472 0 0 1.412v24.66l13.472 8.018 13.43-7.99.042-.026V1.412L13.62.017zm11.4 12.11L13.494 5.334V5.23l-.088.05-.088-.056v.11L1.924 12.117v-8.97l11.547-1.213L25.02 3.147v8.98zm-11.615-5.34L24.923 13.5l-4.48 2.64-7.092-4.22-.012 1.414 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.032-1.787-.012 1.413 1.852 1.092-1.8 1.08-11.356-6.75 11.37-6.835zm-11.48 8.34l11.41 6.79.016 1.045-7.94-4.728-.015 1.416 7.98 4.796.016 1.076-7.97-4.74-.014 1.414 8.02 4.82.046.027 8.143-4.872v-1.267l-.01-.148v-3.76l3.414-2.037v10.02L13.47 31.85 1.925 24.98v-9.853z"/></svg>
+           </div>
+       </footer>
+       
+   </main>
+   
+   <script src="js/burger.js"></script>
+    
+</body>
+</html>
