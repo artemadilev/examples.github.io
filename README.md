@@ -2,7 +2,8 @@
 Самостоятельно сверстанные сайты Barbershop и Nerds, по готовым макетам, в учебных целях. С учетом семантики, БЭМ и html5.
 
 <ul>
-  <li><a href="https://artemadilev.github.io/html_academy-artemadilev.github.io/barbearshop/">barbershop</a></li>
+  <li>barbershop (<a href="https://artemadilev.github.io/html_academy-artemadilev.github.io/barbearshop/">демо</a> | 
+    <a href="https://github.com/artemadilev/examples.github.io/tree/master/barbearshop">исходник</a>)</li>
   <li><a href="https://artemadilev.github.io/html_academy-artemadilev.github.io/nerds/">nerds</a></li>
   <li><a href="https://artemadilev.github.io/html_academy-artemadilev.github.io/pink/">pink</a> - адаптивная верстка</li>
 </ul>
