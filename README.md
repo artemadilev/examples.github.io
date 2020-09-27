@@ -7,4 +7,4 @@
   <li><a href="https://artemadilev.github.io/html_academy-artemadilev.github.io/pink/">pink</a> - адаптивная верстка</li>
 </ul>
 
-<a href="https://github.com/artemadilev/examples.github.io/tree/master/Laravel">Примеры из проекта по Laravel</a>
+<a href="https://github.com/artemadilev/examples.github.io/tree/master/Laravel">Примеры</a><span> из проекта по Laravel</span>
