@@ -10,5 +10,5 @@
   </li>
   <li>pink - (<a href="https://artemadilev.github.io/examples.github.io/pink/">демо</a> | 
     <a href="https://github.com/artemadilev/examples.github.io/tree/master/pink">исходник</a>) - адаптивная верстка</li>
-  <li>Галерея(загрузка и удаление) - (<a href="https://artemadilev.github.io/examples.github.io/php-examples">исходник</a>)
+  <li>Галерея(загрузка и удаление) - (<a href="https://github.com/artemadilev/examples.github.io/tree/master/php-examples">исходник</a>)</li>
 </ul>
